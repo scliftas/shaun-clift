@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import fullPage from './components/fullPage.vue'
-import fullSection from './components/fullSection.vue'
+import fullPage from './components/fullPage/fullPage.vue'
+import fullSection from './components/fullPage/fullSection.vue'
 
 export default {
   name: 'app',
