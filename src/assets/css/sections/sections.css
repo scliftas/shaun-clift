@@ -1,0 +1,17 @@
+.section {
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+.section-child {
+    height: 100%;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
