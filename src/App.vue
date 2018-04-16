@@ -3,27 +3,12 @@
     <fullPage>
       <navbar/>
 
-      <fullSection id="home">
+      <fullSection v-for="(section) in sections" :key="section" :id="section">
         <transition appear>
-          <home/>
+          <component :is="section"></component>
         </transition>
       </fullSection>
-      
-      <fullSection id="about">
-        <about/>
-      </fullSection>
 
-      <fullSection id="skills">
-        <skills/>
-      </fullSection>
-
-      <fullSection id="experience">
-        <experience/>
-      </fullSection>
-
-      <fullSection id="contact">
-        <contact/>
-      </fullSection>
     </fullPage>
   </div>
 </template>
@@ -50,6 +35,12 @@ export default {
     skills,
     experience,
     contact
+  },
+
+  data () {
+    return {
+      sections: ['home', 'about', 'skills', 'experience', 'contact']
+    }
   }
 }
 </script>
