@@ -4,7 +4,9 @@
       <navbar/>
 
       <fullSection id="home">
-        <home/>
+        <transition appear>
+          <home/>
+        </transition>
       </fullSection>
       
       <fullSection id="about">
@@ -45,4 +47,11 @@ export default {
 
 <style>
 @import 'assets/css/styles.css';
+
+.v-enter-active, .v-leave-active {
+  transition: opacity 2s;
+}
+.v-enter, .v-leave-to {
+  opacity: 0;
+}
 </style>
