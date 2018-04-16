@@ -1,3 +1,8 @@
+.navbar {
+    position: absolute;
+    width: 99%;
+}
+
 .navbar-brand {
     line-height: 1.25em;
 }
