@@ -11,3 +11,17 @@
         </div>
     </div>
 </template>
+
+<style>
+#home {
+    background-color: #9DDDFF;
+}
+
+#h1-name {
+    color: #404C5A;
+}
+
+#h1-role {
+    color: #A7566E;
+}
+</style>

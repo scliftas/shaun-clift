@@ -20,3 +20,23 @@
         </b-collapse>
     </b-navbar>
 </template>
+
+<style>
+.navbar {
+    position: absolute;
+    width: 99%;
+}
+
+.navbar-brand {
+    line-height: 1.25em;
+}
+
+#title {
+    font-size: 1.75rem;
+}
+
+#subtitle {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+</style>

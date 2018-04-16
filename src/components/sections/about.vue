@@ -21,3 +21,46 @@
         </div>
     </div>
 </template>
+
+<style>
+#about {
+    background-color: #FF9D9D;
+}
+
+#about-text {
+    font-size: 1.5vw;
+}
+
+@media (max-width: 1199.98px) {
+    #about-image {
+        display: table;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #about-image > img {
+        max-height: 30vw !important;
+        width: auto;
+        top: 0;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 991.98px) {
+    #about-text {
+        font-size: 1.75vw;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #about-text {
+        font-size: 2.4vw;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #about-text {
+        font-size: 2.8vw;
+    }
+}
+</style>
