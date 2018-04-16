@@ -15,6 +15,10 @@
     color: #FFFFFF !important;
 }
 
+.nav-link:hover {
+    color: #868686 !important;
+}
+
 .subtitle {
     font-size: 1rem;
     letter-spacing: 1.5px;
