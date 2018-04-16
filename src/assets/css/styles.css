@@ -7,11 +7,11 @@
     line-height: 1.25em;
 }
 
-.title {
+#title {
     font-size: 1.75rem;
 }
 
-.title, .nav-link {
+#title, .nav-link {
     color: #FFFFFF !important;
 }
 
@@ -19,7 +19,7 @@
     color: #868686 !important;
 }
 
-.subtitle {
+#subtitle {
     font-size: 1rem;
     letter-spacing: 1.5px;
     color: #868686;

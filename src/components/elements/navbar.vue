@@ -1,9 +1,9 @@
 <template>
     <b-navbar toggleable sticky>
         <b-navbar-brand href="#">
-            <span class="title">Shaun Clift</span>
+            <span id="title">Shaun Clift</span>
             <br/>
-            <span class="subtitle">Web Developer</span>
+            <span id="subtitle">Web Developer</span>
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
