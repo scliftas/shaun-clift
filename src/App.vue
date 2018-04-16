@@ -3,20 +3,20 @@
     <fullPage>
       <navbar/>
 
-      <fullSection id="section-1">
+      <fullSection id="home">
         <home/>
       </fullSection>
       
-      <fullSection id="section-2">
+      <fullSection id="about">
       </fullSection>
 
-      <fullSection id="section-3">
+      <fullSection id="skills">
       </fullSection>
 
-      <fullSection id="section-4">
+      <fullSection id="experience">
       </fullSection>
 
-      <fullSection id="section-5">
+      <fullSection id="contact">
       </fullSection>
     </fullPage>
   </div>

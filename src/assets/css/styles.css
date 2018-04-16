@@ -41,23 +41,23 @@
     transform: translateY(-50%);
 }
 
-#section-1 {
+#home {
     background-color: #9DDDFF;
 }
 
-#section-2 {
+#about {
     background-color: #FF9D9D;
 }
 
-#section-3 {
+#skills {
     background-color: #AF9DEB;
 }
 
-#section-4 {
+#experience {
     background-color: #85CEC0;
 }
 
-#section-5 {
+#contact {
     background-color: #FFD0A2;
 }
 
