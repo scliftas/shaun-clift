@@ -4,6 +4,7 @@
       <navbar/>
 
       <fullSection id="section-1">
+        <home/>
       </fullSection>
       
       <fullSection id="section-2">
@@ -25,6 +26,7 @@
 import fullPage from './components/fullPage/fullPage.vue'
 import fullSection from './components/fullPage/fullSection.vue'
 import navbar from './components/elements/navbar.vue'
+import home from './components/sections/home.vue'
 
 export default {
   name: 'app',
@@ -32,7 +34,8 @@ export default {
   components: {
     fullPage,
     fullSection,
-    navbar
+    navbar,
+    home
   }
 }
 </script>

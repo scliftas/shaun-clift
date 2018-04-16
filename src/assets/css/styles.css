@@ -1,3 +1,13 @@
+/* general */
+#title, .nav-link, h1 {
+    color: #FFFFFF !important;
+}
+
+#subtitle, .nav-link:hover, h2 {
+    color: #868686 !important;
+}
+
+/* navbar */
 .navbar {
     position: absolute;
     width: 99%;
@@ -11,18 +21,24 @@
     font-size: 1.75rem;
 }
 
-#title, .nav-link {
-    color: #FFFFFF !important;
-}
-
-.nav-link:hover {
-    color: #868686 !important;
-}
-
 #subtitle {
     font-size: 1rem;
     letter-spacing: 1.5px;
-    color: #868686;
+}
+
+/* sections */
+.section {
+    text-align: center;
+}
+
+.section-child {
+    height: 100%;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #section-1 {
@@ -43,4 +59,13 @@
 
 #section-5 {
     background-color: #FFD0A2;
+}
+
+/* home */
+#h1-name {
+    color: #404C5A;
+}
+
+#h1-role {
+    color: #A7566E;
 }
