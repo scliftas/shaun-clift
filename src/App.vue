@@ -8,6 +8,7 @@
       </fullSection>
       
       <fullSection id="about">
+        <about/>
       </fullSection>
 
       <fullSection id="skills">
@@ -27,6 +28,7 @@ import fullPage from './components/fullPage/fullPage.vue'
 import fullSection from './components/fullPage/fullSection.vue'
 import navbar from './components/elements/navbar.vue'
 import home from './components/sections/home.vue'
+import about from './components/sections/about.vue'
 
 export default {
   name: 'app',
@@ -35,7 +37,8 @@ export default {
     fullPage,
     fullSection,
     navbar,
-    home
+    home,
+    about
   }
 }
 </script>
