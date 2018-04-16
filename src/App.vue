@@ -3,11 +3,11 @@
     <fullPage>
       <navbar/>
 
-      <fullSection>
+      <fullSection id="section-1">
         Test
       </fullSection>
       
-      <fullSection>
+      <fullSection id="section-2">
         Test 2
       </fullSection>
     </fullPage>
