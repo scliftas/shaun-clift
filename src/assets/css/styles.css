@@ -1,0 +1,12 @@
+.navbar-brand {
+    line-height: 1.25em;
+}
+
+.title {
+    font-size: 1.75rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
