@@ -52,6 +52,10 @@ body {
   font-family: 'Raleway';
 }
 
+h3, h4, h5, h6 {
+  font-size: 2rem;
+}
+
 /* animation */
 .v-enter-active, .v-leave-active {
   transition: opacity 2s;
