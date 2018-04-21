@@ -23,10 +23,6 @@
 </template>
 
 <style>
-#about {
-    background-color: #FF9D9D;
-}
-
 #about-text {
     font-size: 1.5vw;
 }

@@ -55,9 +55,9 @@ export default {
 }
 
 /* general */
-#title, .nav-link, h1, h3, p {
+/* #title, .nav-link, h1, h3, h4, p {
     color: #FFFFFF !important;
-}
+} */
 
 #subtitle, .nav-link:hover, h2 {
     color: #868686 !important;

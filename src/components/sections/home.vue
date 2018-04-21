@@ -13,10 +13,6 @@
 </template>
 
 <style>
-#home {
-    background-color: #9DDDFF;
-}
-
 #h1-name {
     color: #404C5A;
 }
