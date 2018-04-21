@@ -46,6 +46,12 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  font-family: 'Raleway';
+}
+
 /* animation */
 .v-enter-active, .v-leave-active {
   transition: opacity 2s;
