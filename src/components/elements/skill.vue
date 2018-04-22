@@ -1,6 +1,6 @@
 <template>
     <b-col class="text-center skill" cols="4">
-        <b-img class="vertical-align skill-image" :src="require('@/assets/skills/' + skill + '.svg')"/>
+        <b-img class="vertical-align skill-image" :title="skill" :alt="skill" :src="require('@/assets/skills/' + skill + '.svg')"/>
     </b-col>
 </template>
 
