@@ -2,7 +2,9 @@
     <div class="section-child">
         <div class="vertical-align contact">
             <h6 class="headers">Contact</h6>
-            <b-form @submit="onSubmit" name="contact" v-if="show" netlify>
+            <b-form @submit="onSubmit" name="contact" netlify>
+                <b-alert variant="success" :show="success">Thanks! Your message has been sent.</b-alert>
+                <b-alert variant="danger" :show="failure">Your message was not sent!</b-alert>
                 <div class="left">
                     <b-form-group id="name" label="Name:" label-for="name">
                         <b-form-input id="name" type="text" v-model="form.name" placeholder="Name" required></b-form-input>
@@ -41,13 +43,15 @@ export default {
                 subject: '',
                 message: ''
             },
-            show: true
+            success: false,
+            failure: false
         }
     },
 
     methods: {
         onSubmit (event) {
-            event.preventDefault();
+            event.preventDefault()
+            this.success = 10
         }
     }
 }
