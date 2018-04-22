@@ -1,6 +1,6 @@
 <template>
     <div class="timeline">
-        <b-card v-for="(event) in events" :key="event" 
+        <b-card v-for="(event) in events" :key="event.title"
                 border-variant="info" 
                 :header="event.header"
                 align="center"
