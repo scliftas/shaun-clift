@@ -25,6 +25,7 @@
 .navbar {
     position: absolute;
     width: 99%;
+    background-color: white;
 }
 
 .navbar-brand {
@@ -38,5 +39,11 @@
 #subtitle {
     font-size: 1rem;
     letter-spacing: 1.5px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
 }
 </style>
