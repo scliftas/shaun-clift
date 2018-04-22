@@ -2,7 +2,7 @@
     <div class="section-child">
 
         <div class="vertical-align">
-            <h3>About</h3>
+            <h3 class="headers">About</h3>
             <b-container id="about-content" fluid>
                 <b-row>
                     <b-col id="about-image" md="12" lg="6">

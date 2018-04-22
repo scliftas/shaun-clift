@@ -1,7 +1,7 @@
 <template>
     <div class="section-child">
         <div class="vertical-align">
-            <h4>Skills</h4>
+            <h4 class="headers">Skills</h4>
             <b-container id="skills-content" fluid>
                 <b-row>
                     <skill v-for="(skill) in skills" :key="skill" :skill="skill"/>

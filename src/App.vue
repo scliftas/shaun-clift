@@ -52,7 +52,7 @@ body {
   font-family: 'Raleway';
 }
 
-h3, h4, h5, h6 {
+.headers {
   font-size: 2rem;
 }
 
