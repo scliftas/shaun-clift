@@ -25,6 +25,7 @@
 <style>
 #about-text {
     font-size: 1.5vw;
+    text-align: left;
 }
 
 @media (max-width: 1199.98px) {
