@@ -26,12 +26,12 @@ export default {
                     text: "Apprentice Developer"
                 },
                 {
-                    header: "March 2017",
+                    header: "March 2017 - April 2017",
                     title: "The Duke Inn",
                     text: "Freelance Developer"
                 },
                 {
-                    header: "July 2016",
+                    header: "July 2016 - August 2016",
                     title: "Luke Clift",
                     text: "Freelance Developer"
                 }
