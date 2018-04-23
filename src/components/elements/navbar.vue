@@ -50,10 +50,4 @@ export default {
     font-size: 1rem;
     letter-spacing: 1.5px;
 }
-
-@media (min-width: 768px) {
-    .navbar {
-        background-color: transparent;
-    }
-}
 </style>
