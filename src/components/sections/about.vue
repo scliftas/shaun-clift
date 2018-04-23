@@ -37,7 +37,7 @@
     }
 
     #about-image > img {
-        max-height: 30vw !important;
+        max-height: 30vw;
         width: auto;
         top: 0;
         transform: translateY(0);
