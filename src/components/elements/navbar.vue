@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable>
+    <b-navbar toggleable sticky>
         <b-navbar-brand @click="scrollTo('home')">
             <span id="title">Shaun Clift</span>
             <br/>
@@ -33,7 +33,7 @@ export default {
 
 <style>
 .navbar {
-    position: absolute;
+    position: absolute !important;
     width: 98%;
     background-color: white;
 }
