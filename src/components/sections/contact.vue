@@ -5,7 +5,6 @@
             <b-form @submit="onSubmit" name="contact" netlify>
                 <b-alert variant="success" :show="success">Thanks! Your message has been sent.</b-alert>
                 <b-alert variant="danger" :show="failure">Your message was not sent!</b-alert>
-                <div class="left">
                     <b-form-group id="name" label="Name:" label-for="name">
                         <b-form-input id="name" type="text" v-model="form.name" placeholder="Name" required></b-form-input>
                     </b-form-group>
@@ -15,15 +14,12 @@
                     </b-form-group>
 
                     <div data-netlify-recaptcha></div>
-                </div>
 
-                <div class="right">
                     <b-form-group id="message" label="Message:" label-for="message">
                         <b-form-textarea id="message" v-model.trim="form.message" placeholder="Message" required no-resize></b-form-textarea>
                     </b-form-group>
 
                     <b-button type="submit" variant="primary">Send</b-button>
-                </div>
             </b-form>
             
         </div>
@@ -83,7 +79,7 @@ button {
 
 @media (min-width: 768px) {
     form {
-        width: 75%;
+        width: 50%;
     }
 
     .left {
