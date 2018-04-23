@@ -11,10 +11,10 @@
         <b-collapse is-nav id="nav_dropdown_collapse">
             
             <b-navbar-nav class="ml-auto">
-                <b-nav-item @click="scrollTo('about')">About</b-nav-item>
-                <b-nav-item @click="scrollTo('skills')">Skills</b-nav-item>
-                <b-nav-item @click="scrollTo('experience')">Experience</b-nav-item>
-                <b-nav-item @click="scrollTo('contact')">Contact</b-nav-item>
+                <b-nav-item id="about-link" @click="scrollTo('about')">About</b-nav-item>
+                <b-nav-item id="skills-link" @click="scrollTo('skills')">Skills</b-nav-item>
+                <b-nav-item id="experience-link" @click="scrollTo('experience')">Experience</b-nav-item>
+                <b-nav-item id="contact-link" @click="scrollTo('contact')">Contact</b-nav-item>
             </b-navbar-nav>
 
         </b-collapse>
@@ -34,7 +34,7 @@ export default {
 <style>
 .navbar {
     position: absolute;
-    width: 99%;
+    width: 98%;
     background-color: white;
 }
 
