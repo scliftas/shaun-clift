@@ -1,6 +1,6 @@
 <template>
     <b-navbar toggleable sticky>
-        <b-navbar-brand href="#">
+        <b-navbar-brand @click="scrollTo('home')">
             <span id="title">Shaun Clift</span>
             <br/>
             <span id="subtitle">Web Developer</span>
@@ -11,15 +11,25 @@
         <b-collapse is-nav id="nav_dropdown_collapse">
             
             <b-navbar-nav class="ml-auto">
-                <b-nav-item href="#">About</b-nav-item>
-                <b-nav-item href="#">Skills</b-nav-item>
-                <b-nav-item href="#">Experience</b-nav-item>
-                <b-nav-item href="#">Contact</b-nav-item>
+                <b-nav-item @click="scrollTo('about')">About</b-nav-item>
+                <b-nav-item @click="scrollTo('skills')">Skills</b-nav-item>
+                <b-nav-item @click="scrollTo('experience')">Experience</b-nav-item>
+                <b-nav-item @click="scrollTo('contact')">Contact</b-nav-item>
             </b-navbar-nav>
 
         </b-collapse>
     </b-navbar>
 </template>
+
+<script>
+export default {
+    methods: {
+        scrollTo (id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+}
+</script>
 
 <style>
 .navbar {
