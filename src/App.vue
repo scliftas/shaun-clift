@@ -65,7 +65,7 @@ body {
 }
 
 #subtitle, .nav-link:hover, h2 {
-    color: #868686 !important;
+    color: #868686;
 }
 
 /* sections */
