@@ -64,11 +64,6 @@ body {
   opacity: 0;
 }
 
-/* general */
-/* #title, .nav-link, h1, h3, h4, p {
-    color: #FFFFFF !important;
-} */
-
 #subtitle, .nav-link:hover, h2 {
     color: #868686 !important;
 }
