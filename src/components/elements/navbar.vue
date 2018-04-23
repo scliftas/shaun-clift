@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable sticky>
+    <b-navbar toggleable>
         <b-navbar-brand @click="scrollTo('home')">
             <span id="title">Shaun Clift</span>
             <br/>
