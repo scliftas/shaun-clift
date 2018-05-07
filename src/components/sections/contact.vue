@@ -2,21 +2,24 @@
     <div class="section-child">
         <div class="vertical-align contact">
             <h6 class="headers">Contact</h6>
-            <b-form @submit="onSubmit" name="contact" netlify>
+            <b-form @submit="onSubmit" name="contact">
                 <b-alert variant="success" :show="success">Thanks! Your message has been sent.</b-alert>
                 <b-alert variant="danger" :show="failure">Your message was not sent!</b-alert>
+
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <b-form-group id="name" label="Name:" label-for="name">
-                        <b-form-input id="name" type="text" v-model="form.name" placeholder="Name" required></b-form-input>
+                        <b-form-input name="name" id="name" type="text" v-model="form.name" placeholder="Name" required></b-form-input>
                     </b-form-group>
 
                     <b-form-group id="email" label="Email:" label-for="email">
-                        <b-form-input id="email" type="email" v-model="form.email" placeholder="Email" required></b-form-input>
+                        <b-form-input name="email" id="email" type="email" v-model="form.email" placeholder="Email" required></b-form-input>
                     </b-form-group>
 
                     <div data-netlify-recaptcha></div>
 
                     <b-form-group id="message" label="Message:" label-for="message">
-                        <b-form-textarea id="message" v-model.trim="form.message" placeholder="Message" required no-resize></b-form-textarea>
+                        <b-form-textarea name="message" id="message" v-model.trim="form.message" placeholder="Message" required no-resize></b-form-textarea>
                     </b-form-group>
 
                     <b-button type="submit" variant="primary">Send</b-button>
