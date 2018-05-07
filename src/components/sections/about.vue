@@ -6,7 +6,7 @@
             <b-container id="about-content" fluid>
                 <b-row>
                     <b-col id="about-image" md="12" lg="6">
-                        <img class="vertical-align img-fluid" src="http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image.png">
+                        <img class="vertical-align img-fluid" :src="require('@/assets/head.png')">
                     </b-col>
 
                     <b-col id="about-text" md="12" lg="6">
