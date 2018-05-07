@@ -47,6 +47,13 @@ export default {
 
 <style>
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('assets/fonts/Raleway-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: 'Raleway';
 }
