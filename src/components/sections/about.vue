@@ -11,10 +11,13 @@
 
                     <b-col id="about-text" md="12" lg="6">
                         <p>
-                            Bacon ipsum dolor amet beef pork cupim chicken. Beef corned beef t-bone porchetta kevin bacon. Drumstick bresaola meatloaf swine t-bone short ribs hamburger. Picanha venison andouille, kielbasa biltong ball tip kevin strip steak jerky beef pork belly short ribs bresaola ham hock sirloin. Biltong tongue landjaeger brisket, strip steak shank rump bresaola alcatra short loin salami ribeye. Alcatra bacon pork loin, tenderloin tri-tip shank pork drumstick.
+                            I am a full-stack web developer currently based in Birmingham, United Kingdom. I have significant experience developing websites on both small and large scales from scratch, both with clients and as part of an established team. With extensive knowledge of both front-end and back-end technologies, I can see a project through from start to finish.
                         </p>
                         <p>
-                            Shank beef buffalo spare ribs turkey kevin ball tip capicola. Short loin capicola bacon ham hock pig prosciutto strip steak venison drumstick rump ball tip tail leberkas tongue meatloaf. Sausage filet mignon jerky cow swine, short ribs alcatra spare ribs fatback pork pancetta pork belly pork loin shoulder tenderloin. Short ribs pork belly rump doner, short loin bacon salami cow ball tip porchetta beef ribs strip steak t-bone sirloin flank.
+                            My experience with doing freelance work for my own clients has allowed me to work closely with them to fully understand their needs and goals, and provide a solution that satisfies them. Meanwhile, working in agencies has made me accustomed to working as part of a team in a fast-paced and ever-changing environment.
+                        </p>
+                        <p>
+                            If you would like to get in touch or hear more, be sure to contact me!
                         </p>
                     </b-col>
                 </b-row>
