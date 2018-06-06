@@ -2,11 +2,9 @@
     <div class="section-child">
         <div class="vertical-align contact">
             <h6 class="headers">Contact</h6>
-            <b-form @submit="onSubmit" name="contact" ref="contact">
+            <b-form @submit="onSubmit">
                 <b-alert variant="success" :show="success">Thanks! Your message has been sent.</b-alert>
                 <b-alert variant="danger" :show="failure">Your message was not sent!</b-alert>
-
-                    <input type="hidden" name="form-name" value="contact" />
 
                     <b-form-group id="name" label="Name:" label-for="name">
                         <b-form-input name="name" id="name" type="text" v-model="form.name" placeholder="Name" required></b-form-input>
@@ -15,8 +13,6 @@
                     <b-form-group id="email" label="Email:" label-for="email">
                         <b-form-input name="email" id="email" type="email" v-model="form.email" placeholder="Email" required></b-form-input>
                     </b-form-group>
-
-                    <div data-netlify-recaptcha></div>
 
                     <b-form-group id="message" label="Message:" label-for="message">
                         <b-form-textarea name="message" id="message" v-model.trim="form.message" placeholder="Message" required no-resize></b-form-textarea>
@@ -48,12 +44,18 @@ export default {
     },
 
     methods: {
+        encode(data) {
+            return Object.keys(data)
+                .map(
+                key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+                )
+                .join('&');
+        },
         onSubmit (event) {
-            event.preventDefault()
-
-            axios.post('/', {
-                'form-name': 'contact',
-                ...this.form
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: this.encode({ 'form-name': 'contact', ...this.form }),
             })
             .then((response) => {
                 this.sucess = 10
