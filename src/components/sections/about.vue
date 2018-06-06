@@ -28,6 +28,7 @@
 
 <style>
 #about-text {
+    margin-top: 3em;
     font-size: 1.5vw;
     text-align: left;
 }
