@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 
 export default {
     name: 'contact',
@@ -51,16 +50,16 @@ export default {
                 )
                 .join('&');
         },
-        onSubmit (event) {
+        onSubmit () {
             fetch('/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: this.encode({ 'form-name': 'contact', ...this.form }),
             })
-            .then((response) => {
+            .then(() => {
                 this.sucess = 10
             })
-            .catch((error) => {
+            .catch(() => {
                 this.failure = 10
             })
         }
