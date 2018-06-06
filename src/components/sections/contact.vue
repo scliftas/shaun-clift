@@ -40,7 +40,6 @@ export default {
             form: {
                 name: '',
                 email: '',
-                subject: '',
                 message: ''
             },
             success: false,
@@ -52,10 +51,9 @@ export default {
         onSubmit (event) {
             event.preventDefault()
 
-            var data = new FormData(this.$refs.contact)
-
             axios.post('/', {
-                data
+                'form-name': 'contact',
+                ...this.form
             })
             .then((response) => {
                 this.sucess = 10
