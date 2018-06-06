@@ -6,6 +6,7 @@
                 align="center"
                 :title="event.title">
                 <p class="card-text">{{ event.text }}</p>
+                <a :href="event.link" class="card-link" target="_blank">View Site</a>
         </b-card>
     </div>
 </template>
