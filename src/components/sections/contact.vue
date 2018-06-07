@@ -2,7 +2,7 @@
     <div class="section-child">
         <div class="vertical-align contact">
             <h6 class="headers">Contact</h6>
-            <b-form name="contact" @submit="onSubmit" method="post" netlify>
+            <b-form name="contact" @submit="onSubmit" method="post" netlify netlify-recaptcha>
                 <b-alert variant="success" :show="success">Thanks! Your message has been sent.</b-alert>
                 <b-alert variant="danger" :show="failure">Your message was not sent!</b-alert>
 
@@ -17,6 +17,8 @@
                     <b-form-group id="message" label="Message:" label-for="message">
                         <b-form-textarea name="message" id="message" v-model="form.message" placeholder="Message" required no-resize></b-form-textarea>
                     </b-form-group>
+
+                    <div data-netlify-recaptcha></div>
 
                     <b-button type="submit" variant="primary">Send</b-button>
             </b-form>
