@@ -43,7 +43,7 @@ export default {
     },
 
     methods: {
-        encode = (data) => {
+        encode (data) {
             return Object.keys(data)
                 .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
                 .join("&");
