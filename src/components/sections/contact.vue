@@ -2,7 +2,7 @@
     <div class="section-child">
         <div class="vertical-align contact">
             <h6 class="headers">Contact</h6>
-            <b-form name="contact" @submit="onSubmit" method="post" netlify netlify-recaptcha>
+            <b-form name="contact" @submit="onSubmit" method="post" netlify>
                 <b-alert variant="success" :show="success">Thanks! Your message has been sent.</b-alert>
                 <b-alert variant="danger" :show="failure">Your message was not sent!</b-alert>
 
