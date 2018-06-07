@@ -2,7 +2,7 @@
     <div class="section-child">
         <div class="vertical-align contact">
             <h6 class="headers">Contact</h6>
-            <b-form @submit="onSubmit" netlify>
+            <b-form name="contact" @submit="onSubmit" method="post" netlify>
                 <b-alert variant="success" :show="success">Thanks! Your message has been sent.</b-alert>
                 <b-alert variant="danger" :show="failure">Your message was not sent!</b-alert>
 
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 
 export default {
     name: 'contact',
@@ -44,11 +43,18 @@ export default {
     },
 
     methods: {
+        encode = (data) => {
+            return Object.keys(data)
+                .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+                .join("&");
+        },
         onSubmit (event) {
             event.preventDefault();
 
-            axios.post('/', {
-                'form-name': 'contact', ...this.form
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: this.encode({ "form-name": "contact", ...this.form })
             })
             .then(() => {
                 this.sucess = 10
