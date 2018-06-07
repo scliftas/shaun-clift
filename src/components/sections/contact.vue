@@ -15,7 +15,7 @@
                     </b-form-group>
 
                     <b-form-group id="message" label="Message:" label-for="message">
-                        <b-form-textarea name="message" id="message" v-model.trim="form.message" placeholder="Message" required no-resize></b-form-textarea>
+                        <b-form-textarea name="message" id="message" v-model="form.message" placeholder="Message" required no-resize></b-form-textarea>
                     </b-form-group>
 
                     <b-button type="submit" variant="primary">Send</b-button>
