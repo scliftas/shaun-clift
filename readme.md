@@ -2,6 +2,8 @@
 
 New portfolio site developed in Vue.
 
+View it [here!](https://www.shaunclift.com)
+
 ## Getting Started
 
 ### Installing
