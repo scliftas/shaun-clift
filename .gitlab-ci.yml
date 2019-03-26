@@ -1,7 +1,7 @@
 image: docker:latest
 
 variables:
-  S3_BUCKET_NAME: "shaunclift.co.uk"
+  S3_BUCKET_NAME: "shaunclift.dev"
 
 stages:
   - build
