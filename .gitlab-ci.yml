@@ -7,7 +7,7 @@ stages:
   - build
   - deploy
 
-Build:
+build:
   stage: build
   image: node:8.11.3
   tags:
@@ -25,7 +25,7 @@ Build:
   only:
     - master
 
-Deploy:
+deploy:
   stage: deploy
   image: python:latest
   dependencies:
