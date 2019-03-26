@@ -1,14 +1,39 @@
-image: tetraweb/php
+image: docker:latest
 
 variables:
   S3_BUCKET_NAME: "shaun-clift"
 
-before_script:
-  - npm install
-  - npm run build
+stages:
+  - build
+  - deploy
 
-deploy:
-  image: python:latest
+Build:
+  stage: build
+  image: node:8.11.3
+  tags:
+    - node
+  before_script: 
+    - npm install
   script:
-  - pip install awscli
-  - aws s3 cp ./dist/ s3://$S3_BUCKET_NAME/ --recursive
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 20 mins
+  environment:
+    name: production
+  only:
+    - master
+
+Deploy:
+  stage: deploy
+  image: python:latest
+  dependencies:
+    - build
+  script:
+    - pip install awscli
+    - aws s3 cp dist s3://$S3_BUCKET_NAME/ --recursive
+  environment:
+    name: production
+  only:
+    - master
