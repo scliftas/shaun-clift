@@ -1,1 +1,1 @@
-Sitemap: https://shaunclift.co.uk/sitemap.xml
+Sitemap: https://shaunclift.dev/sitemap.xml
