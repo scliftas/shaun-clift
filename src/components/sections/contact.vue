@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 
 export default {
     name: 'contact',
@@ -45,25 +46,23 @@ export default {
     },
 
     methods: {
-        encode (data) {
-            return Object.keys(data)
-                .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-                .join("&");
-        },
         onSubmit (event) {
             event.preventDefault();
 
-            fetch("/", {
+            axios({
+                url: "https://bbj8ce8dr7.execute-api.eu-west-1.amazonaws.com/prod/send",
                 method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: this.encode({ "form-name": "contact", ...this.form })
+                headers: { 
+                    "Content-Type": "application/json"
+                },
+                data: JSON.stringify({
+                    name: this.form.name,
+                    email: this.form.email,
+                    desc: this.form.message
+                })
             })
-            .then(() => {
-                this.sucess = 10
-            })
-            .catch(() => {
-                this.failure = 10
-            })
+            
+            this.success = 10;
         }
     }
 }
